@@ -54,6 +54,7 @@ router.get('/walkers/summary', async(req,res) => {
     LEFT JOIN WalkRequests ON WalkRatings.request_id = WalkRequests.request_id
     WHERE Users.role = 'walker'
     GROUP BY Users.user_id`);
+    res.json(rows);
 
     }
     database.query(sql, (err, results) => {
