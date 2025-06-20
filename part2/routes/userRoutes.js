@@ -71,8 +71,8 @@ router.post('/login', async (req, res) => {
 
 // question 14
 // student add logout
-router.post('/logout', (req,res) =>{
-  
+router.post('/logout', (req,res) => {
+  req.session.destroy()
   if (err) {
     return res.status(500).json({error: 'logout failed'});
   }
