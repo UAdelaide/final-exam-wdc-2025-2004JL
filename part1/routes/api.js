@@ -4,5 +4,6 @@ const database = require('../db');
 
 router.get('/dog',(req, res) => {
     const sql = `
+    SELECT Dogs.name AS dog_name,
     `
 })
