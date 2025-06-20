@@ -47,7 +47,7 @@
       methods:{
         async login(){
           try {
-            const response = await axios.post('/userRoutes/login',{
+            const response = await axios.post('routes/userRoutes/login',{
               username: this.username,
               password: this.password
             });
