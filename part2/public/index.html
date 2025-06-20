@@ -23,9 +23,8 @@
           <label for="username">Username</label>
           <input id= "username" v-model="username" type="text" class="form-control" :class="{ 'filled-input': username }" required>
 
-          <div id="password_div">
-         <label for="password">Password</label><br>
-         <input id= "password" v-model="password" type="password" required><br>
+         <label for="password">Password</label>
+         <input id= "password" v-model="password" type="password" :class="{ 'filled-input': username }" required><br>
         </div>
       </div>
     </div>
