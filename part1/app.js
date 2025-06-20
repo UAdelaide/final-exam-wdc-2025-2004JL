@@ -24,7 +24,8 @@ const database =require('./db');
 async function inputTestData() {
     try {
         await database.execute(`
-            INSERT INTO Users (username, email, password_hash, role) VALUES`)
+            INSERT INTO Users (username, email, password_hash, role) VALUES
+            `)
     }
 
 }
