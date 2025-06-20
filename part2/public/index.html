@@ -64,7 +64,9 @@
             }
           }
           catch (err) {
-            if (err.response && err.response.data && err.response.data.err)
+            if (err.response && err.response.data && err.response.data.err){
+              this error = err.response.data
+            }
           }
         }
       }
