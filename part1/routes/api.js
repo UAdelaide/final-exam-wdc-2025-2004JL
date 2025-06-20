@@ -20,7 +20,7 @@ router.get('/dogs',(req, res) => {
     });
 });
 
-//  /api/walkrequests/
+//  /api/walkrequests/open
 router.get('/walkrequests/open',(req,res) => {
     const sql = `
     SELECT WalkRequests.request_id,
@@ -32,7 +32,7 @@ router.get('/walkrequests/open',(req,res) => {
     FROM WalkRequests
     JOIN Dogs ON WalkRequests.dog_id = Dogs.dog_id
     JOIN Users ON Dogs.owner_id = Users.user_id
-    WHERE WalkRequests.status`
+    WHERE WalkRequests.status = 'open'`
 })
 
 module.exports = router;
