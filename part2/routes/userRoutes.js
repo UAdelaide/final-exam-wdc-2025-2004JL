@@ -84,7 +84,9 @@ router.post('/logout', (req,res) => {
 // question 15
 // student add mydog router
 router.get('/mydogs', async(req,res) => {
-  
+  try {
+    const [rows] = await dat
+  }
 })
 
 module.exports = router;
