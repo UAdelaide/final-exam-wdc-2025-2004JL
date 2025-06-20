@@ -34,7 +34,7 @@ router.get('/walkrequests/open',(req,res) => {
     JOIN Users ON Dogs.owner_id = Users.user_id
     WHERE WalkRequests.status = 'open'`;
 
-    database.query(sql)
+    database.query(sql,(err, result) => )
 })
 
 module.exports = router;
