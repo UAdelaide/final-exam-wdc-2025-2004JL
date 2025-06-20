@@ -97,7 +97,7 @@
 
         async function login() {
           try{
-            const response = await axios.post('/routes/userRoutes/login',{
+            const response = await axios.post('/api/users/login',{
               username: username.value,
               password: password.value
             });
