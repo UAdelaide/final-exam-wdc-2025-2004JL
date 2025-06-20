@@ -75,8 +75,7 @@ async function inputTestData() {
             'happy!'
             );
         );
-        console.log
-
+        console.log('testdata input');
     }
 
 }
