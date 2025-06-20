@@ -64,6 +64,9 @@ router.post('/login', async (req, res) => {
     else if (row[0].role === 'walker'){
       return res.redirect('/walker/dashboard');
     }
+    else {
+      return res.status(400).json({error})
+    }
 
     res.json({ message: 'Login successful', user: rows[0] });
   } catch (error) {
