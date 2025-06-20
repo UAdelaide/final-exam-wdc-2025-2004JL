@@ -51,7 +51,8 @@ router.get(' /walkers/summary',(req,res) => {
     AVG(WalkRating) AS average_rating,
     COUNT (CASE WHEN WalkRequests.status = 'completed' THEN 1 END) AS
     FROM Users
-    LEFT JOIN WalkRating ON Users.user_id =WalkRating.walker_id`
+    LEFT JOIN WalkRating ON Users.user_id =WalkRating.walker_id
+    LEFT JOIN WalkRequests ON WalkRatings.requ`
 })
 
 module.exports = router;
