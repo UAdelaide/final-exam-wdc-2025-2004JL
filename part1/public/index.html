@@ -49,9 +49,10 @@
             methods: {
                 async getdog(){
                     const response= await axios.get(' https://dog.ceo/dog-api/documentation/random');
-                    this.dogImage
+                    this.dogImage = response.data.message;
                 }
-            }
+            },
+            
         })
     </script>
 </body>
