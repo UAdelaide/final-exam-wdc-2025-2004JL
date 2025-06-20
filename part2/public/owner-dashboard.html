@@ -91,6 +91,7 @@
           catch (err) {
             alert('Logout failed');
           }
+        }
 
         async function loadDogInfo() {
           try {
@@ -101,7 +102,7 @@
             console.error('failed to fetch dogs');
           }
           }
-        }
+
 
         const form = ref({
           dog_id: '',
