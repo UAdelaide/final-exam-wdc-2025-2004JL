@@ -6,9 +6,10 @@ const database = require('../db');
 router.get('/dogs', async (req, res) => {
     try{
         const [rows] = await database.execute(`
-            SELECT Dogs.dog,
+            SELECT Dogs.dog_id,
+            Dogs.name,
             Dogs.size,
-            Users.username As owner_username
+            
             FROM Dogs`);
         res.json(rows);
     }
