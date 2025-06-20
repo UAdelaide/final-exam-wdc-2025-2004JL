@@ -41,7 +41,8 @@ async function inputTestData() {
             ('Lucky', 'medium', (SELECT user_id FROM Users WHERE username = 'sun567'));
             `);
 
-        
+        await database.execute(`
+            `)
     }
 
 }
