@@ -84,6 +84,8 @@
               const img_res = await axios.get('https://dog.ceo/api/breeds/image/random')
               dog.photo = img_res.data.message;
             }
+
+            dog.value = dogList;
           }
         }
       }
