@@ -42,7 +42,7 @@ router.post('/login', async (req, res) => {
 
   try {
     const [rows] = await db.query(`
-      SELECT username , password_hash, role FROM Users
+      SELECT user_id, username , password_hash, role FROM Users
       WHERE username = ? AND password_hash = ?
     `, [username, password]);
 
@@ -52,7 +52,7 @@ router.post('/login', async (req, res) => {
 
     // stundent add
     // save user information into session
-    const user = rows[0]
+    const user = rows[0];
 
     req.session.user = {
       id: user.user_id,
