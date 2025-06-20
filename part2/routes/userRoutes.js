@@ -65,7 +65,7 @@ router.post('/login', async (req, res) => {
       });
     }
     else {
-      return res.status(400).json({error:'unkonwn role'})
+      return res.status(400).json({error:'unkonwn role'});
     }
   }catch (error) {
     es.status(500).json({error:'login failed'});
