@@ -66,6 +66,6 @@ router.post('/login', async (req, res) => {
     }
     else {
       return res.status(400).json({error:'unkonwn role'})
-    }
+    } 
 
 module.exports = router;
