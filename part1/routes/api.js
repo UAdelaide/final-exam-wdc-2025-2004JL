@@ -34,7 +34,7 @@ router.get('/walkrequests/open',async(req,res) => {
             JOIN Users ON Dogs.owner_id = Users.user_id
             WHERE WalkRequests.status = 'open'`)
     }
-
+    
     database.query(sql,(err, results) => {
         if(err) {
             console.error('Error get  /api/walkrequests/open:', err);
