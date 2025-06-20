@@ -62,7 +62,10 @@ router.post('/login', async (req, res) => {
       return res.json({
         message: 'login successful',
         user: req.session.user
-      })
+      });
+    }
+    else {
+      return 
     }
 
 module.exports = router;
