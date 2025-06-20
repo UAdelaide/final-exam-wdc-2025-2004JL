@@ -21,8 +21,11 @@ app.use('/api', apiRouter);
 
 const database =require('./db');
 
-async function input(params) {
-    
+async function inputTestData() {
+    try {
+        
+    }
+
 }
 
 
