@@ -37,8 +37,9 @@ router.get('/walkrequests/open',(req,res) => {
     database.query(sql,(err, result) => {
         if(err) {
             console.error('Error get  /api/walkrequests/open:', err);
-            return res.status(500).json({error: 'failed to get'})
+            return res.status(500).json({error: 'failed to get walkrequests'});
         }
+        res.
     })
 })
 
