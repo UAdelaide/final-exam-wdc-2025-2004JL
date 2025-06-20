@@ -21,7 +21,9 @@ router.get('/dogs', async (req, res) => {
 
 //  /api/walkrequests/open
 router.get('/walkrequests/open',async(req,res) => {
-    try {}
+    try {
+        const [rows] = await database.execute
+    }
     const sql = `
     SELECT WalkRequests.request_id,
     Dogs.name AS dog_name,
