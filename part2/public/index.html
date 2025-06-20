@@ -15,8 +15,8 @@
       <div class="col-md-6">
         <h1 class="text-primary" mb-4>{{ message }}</h1>
         <div  @submit.prevent ='login' id="all">
-           <label for="username">Username</label><br>
-           <input id= "username" v-model="username" type="text" class="form-control :class="{ 'filled-input': username }" required>
+           <label for="username">Username</label>
+           <input id= "username" v-model="username" type="text" class="form-control" :class="{ 'filled-input': username }" required>
 
         </div>
       </div>
