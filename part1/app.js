@@ -51,7 +51,7 @@ async function inputTestData() {
         );
 
         await database.execute(`
-            INSERT INTO`)
+            INSERT INTO WalkRating (reques_id, walk)`)
     }
 
 }
