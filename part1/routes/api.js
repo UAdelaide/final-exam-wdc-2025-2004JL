@@ -30,7 +30,8 @@ router.get('/walkrequests/open',(req,res) => {
     WalkRequests.location,
     User.username AS owner_username
     FROM WalkRequests
-    JOIN Dogs ON`
+    JOIN Dogs ON WalkRequests.dog_id = Dogs.dog_id
+    JOIN User`
 })
 
 module.exports = router;
