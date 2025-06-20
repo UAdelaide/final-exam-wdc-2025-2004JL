@@ -47,7 +47,8 @@ router.get('/walkrequests/open',(req,res) => {
 router.get(' /walkers/summary',(req,res) => {
     const sql =`
     SELECT Users.username AS walker_username,
-    COUNT(WalkRating.rating_id)`
+    COUNT(WalkRating.rating_id) AS total_rating,
+    AVG(Walk)`
 })
 
 module.exports = router;
