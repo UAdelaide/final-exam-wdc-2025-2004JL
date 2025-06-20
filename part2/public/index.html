@@ -110,7 +110,9 @@
               error.value = 'unknow role'
             }
           }
-          catch (err)
+          catch (err) {
+            if (err.res)
+          }
 
         }
       }
