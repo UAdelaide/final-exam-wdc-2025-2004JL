@@ -52,8 +52,9 @@
 
         for(let dog of dogList) {
           const img_res = await.get('https://dog.ceo/api/breeds/image/random')
-          dog.photo = img_res.data
+          dog.photo = img_res.data.message;
         }
+        
       }
     }
 
