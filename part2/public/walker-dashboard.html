@@ -45,6 +45,17 @@
 
     createApp({
       setup() {
+        // add logout function
+        // student add
+        async function logout() {
+          try {
+            await fetch('/api/users/logout',{method: 'POST'});
+            window.location.href = '/'; // go back login
+          }
+          catch (err) {
+            alert('Logout failed');
+          }
+        }
         const walks = ref([]);
         const message = ref('');
         const error = ref('');
