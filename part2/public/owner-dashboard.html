@@ -94,8 +94,11 @@
 
           const myDogs = ref([]);
 
-          async function loadDogInfo(params) {
-            
+          async function loadDogInfo() {
+            try {
+              const res =await fetch('/api/')
+            }
+
           }
         }
 
