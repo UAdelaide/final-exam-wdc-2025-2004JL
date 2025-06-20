@@ -23,13 +23,13 @@
     <div class ="row justify-content-center">
       <div class="col-md-4">
         <h1 class="text-primary" mb-4>{{ message }}</h1>
-        <div  @submit.prevent ='login' id="all">
+        <form  @submit.prevent ='login' id="all">
           <label for="username">Username</label>
           <input id= "username" v-model="username" type="text" class="form-control" :class="{ 'filled-input': username }" required>
 
          <label for="password">Password</label>
          <input id= "password" v-model="password" type="password" class="form-control" :class="{ 'filled-input': password}" required>
-        </div>
+        </form>
        <button type="submit" class="btn btn-primary mt-3 mb-4">Log In</button>
       </div>
     </div>
