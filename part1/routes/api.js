@@ -2,4 +2,6 @@ const express = require('express');
 const router = express.Router();
 const database = require('../db');
 
-router.get('')
+router.get('/dog',(req, res) =>{
+    
+})
