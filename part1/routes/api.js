@@ -24,7 +24,7 @@ router.get('/dogs',(req, res) => {
 router.get('/walkrequests/open',(req,res) => {
     const sql = `
     SELECT WalkRequests.request_id,
-    Dogs.names AS dog_name,
+    Dogs.name AS dog_name,
     WalkRequests.requested_time,
     WalkRequests.duration_minutes,
     WalkRequests.location,
