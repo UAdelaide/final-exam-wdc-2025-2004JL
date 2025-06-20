@@ -60,9 +60,10 @@
               window.location.href ='/walker/dashboard'
             }
             else{
-              this.error
+              this.error ='unknow role';
             }
           }
+          catch (err)
         }
       }
     }).mount('#app');
