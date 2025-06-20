@@ -47,7 +47,7 @@
 
     async function loadDogs() {
       try{
-        const res = await.get('/api/dogs');
+        const res = await axios.get('/api/dogs');
         const dogList = res.data;
 
         for(let dog of dogList) {
