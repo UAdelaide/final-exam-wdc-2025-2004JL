@@ -70,6 +70,7 @@ router.post('/login', async (req, res) => {
 });
 
 // question 14
-// student add 
+// student add logout
+
 
 module.exports = router;
