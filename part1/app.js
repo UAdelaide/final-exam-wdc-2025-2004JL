@@ -19,7 +19,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api', apiRouter);
 
-const databases
+const database =require('./db');
+
 
 
 module.exports = app;
