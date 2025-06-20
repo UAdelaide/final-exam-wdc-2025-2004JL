@@ -59,7 +59,8 @@ async function inputTestData() {
             (SELECT user_id FROM Users WHERE username = 'alice123')`),
             5,
             'good walk!'
-        ),
+            ),
+            ()
 
     }
 
