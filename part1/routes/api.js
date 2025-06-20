@@ -14,7 +14,8 @@ router.get('/dogs',(req, res) => {
     res.json(rows);
     }
     catch (err) {
-        
+        console.error('error:', err);
+        res.status(500).json({error:'failed to get dogs'});
     }
 
     database.query(sql,(err, results) => {
