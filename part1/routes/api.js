@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const database = require('../db');
 
-// 
+// /api/dogs
 router.get('/dogs',(req, res) => {
     const sql = `
     SELECT Dogs.name AS dog_name,
@@ -19,5 +19,6 @@ router.get('/dogs',(req, res) => {
         res.json(results);
     });
 });
+
 
 module.exports = router;
