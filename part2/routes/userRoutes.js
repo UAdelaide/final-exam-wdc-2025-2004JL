@@ -67,8 +67,6 @@ router.post('/login', async (req, res) => {
     else {
       return res.status(400).json({error: 'unknown role'});
     }
-
-    res.json({ message: 'Login successful', user: rows[0] });
   } catch (error) {
     res.status(500).json({ error: 'Login failed' });
   }
