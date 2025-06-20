@@ -52,7 +52,7 @@ router.get(' /walkers/summary',(req,res) => {
     COUNT (CASE WHEN WalkRequests.status = 'completed' THEN 1 END) AS
     FROM Users
     LEFT JOIN WalkRating ON Users.user_id =WalkRating.walker_id
-    LEFT JOIN WalkRequests ON WalkRatings.requ`
+    LEFT JOIN WalkRequests ON WalkRatings.request_id = WalkRequests.reuest`
 })
 
 module.exports = router;
