@@ -58,7 +58,9 @@ router.post('/login', async (req, res) => {
       role: user.role
     };
 
-    
+    res.json({
+      message:'login sucessful'
+    })
     if (rows[0].role === 'owner' || rows[0].role === 'walker'){
       return res.json({
         message: 'login successful',
