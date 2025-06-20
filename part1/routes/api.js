@@ -10,7 +10,7 @@ router.get('/dogs', async (req, res) => {
             Dogs.size,
             Users.username As owner_username
             FROM Dogs
-            JOIN Users ON Dogs.owner_id = Users.user_id`);
+            JOIN Users ON Dogs.owner_id = Users.user_id;`);
         res.json(rows);
     }
     catch (err) {
@@ -32,7 +32,7 @@ router.get('/walkrequests/open',async(req,res) => {
             FROM WalkRequests
             JOIN Dogs ON WalkRequests.dog_id = Dogs.dog_id
             JOIN Users ON Dogs.owner_id = Users.user_id
-            WHERE WalkRequests.status = 'open'`);
+            WHERE WalkRequests.status = 'open';`);
             res.json(rows);
     }
     catch (err) {
