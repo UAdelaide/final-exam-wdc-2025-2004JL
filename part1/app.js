@@ -82,5 +82,5 @@ async function inputTestData() {
         }
 }
 
-
+inputTestData();
 module.exports = app;
