@@ -13,6 +13,9 @@ router.get('/dogs',(req, res) => {
     JOIN Users ON Dogs.owner_id = Users.user_id`);
     res.json(rows);
     }
+    catch (err) {
+        
+    }
 
     database.query(sql,(err, results) => {
         if (err) {
