@@ -21,6 +21,9 @@ app.use('/api', apiRouter);
 
 const database =require('./db');
 
+async function input(params) {
+    
+}
 
 
 module.exports = app;
