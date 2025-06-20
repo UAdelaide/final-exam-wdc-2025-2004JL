@@ -71,6 +71,8 @@ router.post('/login', async (req, res) => {
 
 // question 14
 // student add logout
-router.post('/logout')
+router.post('/logout', (req,res) =>{
+  
+})
 
 module.exports = router;
