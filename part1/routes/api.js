@@ -20,7 +20,8 @@ router.get('/dogs', async (req, res) => {
 });
 
 //  /api/walkrequests/open
-router.get('/walkrequests/open',(req,res) => {
+router.get('/walkrequests/open',async(req,res) => {
+    try {}
     const sql = `
     SELECT WalkRequests.request_id,
     Dogs.name AS dog_name,
