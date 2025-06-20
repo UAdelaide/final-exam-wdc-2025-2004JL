@@ -50,7 +50,6 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ error: 'Invalid credentials' });
     }
 
-    // stundent add
     // save user information into session
     const user = rows[0];
 
