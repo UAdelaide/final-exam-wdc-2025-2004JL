@@ -48,13 +48,13 @@
                 };
             },
             methods: {
-                async getdog(){
+                async getDog(){
                     const response= await axios.get('https://dog.ceo/api/breeds/image/random');
                     this.dogImage = response.data.message;
                 }
             },
             mounted () {
-                this.getdog();
+                this.getDog();
             }
         }).mount('#app');
     </script>
