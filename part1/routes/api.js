@@ -12,7 +12,7 @@ router.get('/dog',(req, res) => {
 
     database.query(sql,(err, results) => {
         if (err) {
-            console.error('')
+            console.error('error:', err);
         }
     })
 })
