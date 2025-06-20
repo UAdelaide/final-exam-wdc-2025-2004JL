@@ -21,5 +21,6 @@ router.get('/dogs',(req, res) => {
 });
 
 //  /api/walkrequests/
+router.get
 
 module.exports = router;
