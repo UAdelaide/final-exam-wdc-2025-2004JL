@@ -73,10 +73,11 @@ async function inputTestData() {
             (SELECT user_id FROM Users WHERE username = 'sun567')
             5,
             'happy!'
-            );
+            );`
         );
         console.log('testdata input');
     }
+        catch
 
 }
 
