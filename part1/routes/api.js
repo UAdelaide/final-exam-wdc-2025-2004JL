@@ -6,5 +6,6 @@ router.get('/dog',(req, res) => {
     const sql = `
     SELECT Dogs.name AS dog_name,
     Dogs.size,
-    Users.username As`
+    Users.username As owner_username
+    `
 })
