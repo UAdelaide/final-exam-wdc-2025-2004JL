@@ -46,7 +46,8 @@ router.get('/walkrequests/open',(req,res) => {
 //  /api/walkers/summary
 router.get(' /walkers/summary',(req,res) => {
     const sql =`
-    SELECT Users.username AS`
+    SELECT Users.username AS walker_username,
+    COUNT`
 })
 
 module.exports = router;
