@@ -21,6 +21,8 @@ router.get('/dogs',(req, res) => {
 });
 
 //  /api/walkrequests/
-router.get('/walkrequests/open')
+router.get('/walkrequests/open',(req,res) => {
+    const sql = ``
+})
 
 module.exports = router;
