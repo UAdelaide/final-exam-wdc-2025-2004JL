@@ -77,7 +77,9 @@ async function inputTestData() {
         );
         console.log('testdata input');
     }
-        catch
+        catch(err){
+            console.err
+        }
 
 }
 
