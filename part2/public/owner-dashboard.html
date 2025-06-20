@@ -97,8 +97,9 @@
           async function loadDogInfo() {
             try {
               const res =await fetch('/api/users/mydogs');
-              myDogs.value = await
+              myDogs.value = await res.json();
             }
+            catch (err)
 
           }
         }
