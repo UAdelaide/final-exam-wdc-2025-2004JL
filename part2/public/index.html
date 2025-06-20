@@ -67,78 +67,8 @@
     const { createApp, ref} = Vue;
     // quetion 17
     // use /api/dog
-    const dogs = ref ([]);
+    
 
-    async function loadDogs() {
-      try{
-        const res = await axios.get('/api/dogs');
-        const dogList = res.data;
-
-        for(let dog of dogList) {
-          const img_res = await axios.get('https://dog.ceo/api/breeds/image/random')
-          dog.photo = img_res.data.message;
-        }
-
-        dogs.value = dogList;
-      }
-      catch(err){
-        console.error('failed to load dog img', err);
-      }
-    }
-
-    createApp({
-      setup() 
-      data() {
-        return {
-          message: 'Welcome to the Dog Walking Service!',
-          username: '',
-          password: '',
-          error:''
-        };
-      },
-      methods:{
-        async login(){
-          try {
-            const response = await axios.post('/api/users/login',{
-              username: this.username,
-              password: this.password
-            });
-
-            const role = response.data.user.role;
-            if (role === 'owner') {
-              window.location.href= 'owner-dashboard.html'
-            }
-            else if (role === 'walker'){
-              window.location.href = 'walker-dashboard.html'
-            }
-            else{
-              this.error ='unknow role';
-            }
-          }
-          catch (err) {
-            if (err.response && err.response.data && err.response.data.err){
-              this.error = err.response.data.error;
-            }
-            else {
-              this.error = 'login failed. Please try again'
-            }
-          }
-        }
-
-      }
-      onMounted(()=> {
-          loadDogs();
-        });
-
-        return {
-          dogs,
-          message,
-          username,
-          password,
-          error,
-          login
-        }
-    }).mount('#app');
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
