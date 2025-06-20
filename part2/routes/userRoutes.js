@@ -85,7 +85,8 @@ router.post('/logout', (req,res) => {
 // student add mydog router
 router.get('/mydogs', async(req,res) => {
   try {
-    const [rows] = await dat
+    const [rows] = await db.query(`
+      `)
   }
 })
 
