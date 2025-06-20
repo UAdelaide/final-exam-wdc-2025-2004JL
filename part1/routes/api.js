@@ -5,14 +5,13 @@ const database = require('../db');
 // /api/dogs
 router.get('/dogs',(req, res) => {
     try{
-        const [rows] = await database.execute();
-    }
-    const sql = `
+        const [rows] = await database.execute(`
     SELECT Dogs.name AS dog_name,
     Dogs.size,
     Users.username As owner_username
     FROM Dogs
-    JOIN Users ON Dogs.owner_id = Users.user_id`;
+    JOIN Users ON Dogs.owner_id = Users.user_id`);
+    }
 
     database.query(sql,(err, results) => {
         if (err) {
