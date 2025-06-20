@@ -23,7 +23,7 @@ router.get('/dogs',(req, res) => {
 //  /api/walkrequests/
 router.get('/walkrequests/open',(req,res) => {
     const sql = `
-    SELECT `WalkRequests
+    SELECT WalkRequests.request_id`
 })
 
 module.exports = router;
