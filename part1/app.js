@@ -65,14 +65,14 @@ async function inputTestData() {
             (SELECT user_id FROM Users WHERE username = 'bobwalker'),
             (SELECT user_id FROM Users WHERE username = 'carol123')
             5,
-            'good walk!'
+            'nice!'
             ),
             (
             (SELECT request_id FROM WalkRequests WHERE dog_id =(SELECT dog_id FROM Dogs WHERE name = 'Mike')),
             (SELECT user_id FROM Users WHERE username = 'ljl89'),
             (SELECT user_id FROM Users WHERE username = 'sun567')
             5,
-            'good walk!'
+            'happy!'
             )
 
 
