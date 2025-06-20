@@ -44,6 +44,6 @@ router.get('/walkrequests/open',(req,res) => {
 });
 
 //  /api/walkers/summary
-router.get
+router.get(' /walkers/summary',(req,res) => )
 
 module.exports = router;
