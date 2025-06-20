@@ -61,7 +61,7 @@ router.post('/login', async (req, res) => {
     if (rows[0].role === 'owner'){
       return res.redirect('/owner/dashboard');
     }
-    else if (row[0].role === '/owner/dashboard'){
+    else if (row[0].role === 'walker'){
       return res.redirect('/walker/dashboard');
     }
 
