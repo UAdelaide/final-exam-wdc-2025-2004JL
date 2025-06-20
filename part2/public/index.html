@@ -88,6 +88,7 @@
 
             dogs.value = dogList;
             console.log('dog loaded:', dogs.value);
+            console.log('response from /api/dogs:', res.data);
           }
           catch (err){
             console.error('failed to load dog img', err);
