@@ -124,7 +124,9 @@
           }
         }
 
-        onM
+        onMounted(()=> {
+          loadDogs();
+        })
       }
     }).mount('#app');
   </script>
