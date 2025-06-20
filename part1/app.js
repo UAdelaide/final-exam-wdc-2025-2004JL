@@ -51,7 +51,7 @@ async function inputTestData() {
         );
 
         await database.execute(`
-            `)
+            INSERT INTO`)
     }
 
 }
