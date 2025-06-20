@@ -19,7 +19,7 @@
     <a href="walker-dashboard.html" class="btn btn-outline-success">Walker Dashboard</a> -->
 
     <!-- stundent add/ input username and password -->
-    <form @subi>
+    <form @submit.prevent ='login'>
       <div id="ask">
       <label for="username">Username</label><br>
       <input v-model="username" type="text" required><br>
