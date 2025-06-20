@@ -33,7 +33,13 @@ async function inputTestData() {
             `);
 
         await database.execute(`
-            `)
+            INSERT INTO Dogs (name, size, owner_id) VALUES
+
+('Max', 'medium', (SELECT user_id FROM Users WHERE username = 'alice123')),
+('Bella', 'small', (SELECT user_id FROM Users WHERE username = 'carol123')),
+('Jim', 'large', (SELECT user_id FROM Users WHERE username = 'alice123')),
+('Mike', 'small', (SELECT user_id FROM Users WHERE username = 'sun567')),
+('Lucky', 'medium', (SELECT user_id FROM Users WHERE username = 'sun567'));`)
     }
 
 }
