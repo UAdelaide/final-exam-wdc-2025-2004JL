@@ -52,7 +52,7 @@ router.post('/login', async (req, res) => {
     // stundent add
     // save user information into session
     req.session.user = {
-      id
+      id: rows[0].user_id
     }
 
     res.json({ message: 'Login successful', user: rows[0] });
