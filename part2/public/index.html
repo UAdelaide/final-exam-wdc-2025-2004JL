@@ -94,12 +94,12 @@
 
         async function login() {
           try{
-            const reponse = await axios.post('/api/users/login',{
+            const response = await axios.post('/api/users/login',{
               username: username.value,
               password: password.value
             });
 
-            const role = reponse.data.user.role;
+            const role = response.data.user.role;
             if (role === 'owner'){
               window.location.href = 'owner-dashboard.html';
             }
@@ -111,7 +111,7 @@
             }
           }
           catch (err) {
-            if (err.reponse && err.reponse.data && err.reponse.data.error){
+            if (err.response && err.response.data && err.response.data.error){
               error.value = err.reponse.data.error;
             }
             else {
