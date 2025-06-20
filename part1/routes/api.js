@@ -26,7 +26,9 @@ router.get('/walkrequests/open',(req,res) => {
     SELECT WalkRequests.request_id,
     Dogs.names AS dog_name,
     WalkRequests.requested_time,
-    WalkRequests.duration_minutes,`
+    WalkRequests.duration_minutes,
+    WalkRequests.location,
+    `
 })
 
 module.exports = router;
