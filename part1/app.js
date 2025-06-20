@@ -78,9 +78,8 @@ async function inputTestData() {
         console.log('testdata input');
     }
         catch(err){
-            console.err
+            console.error('input testdata fail', err);
         }
-
 }
 
 
