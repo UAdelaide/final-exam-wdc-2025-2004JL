@@ -56,7 +56,7 @@ router.get(' /walkers/summary',(req,res) => {
     WHERE Users.role = 'walker'
     GROUP BY Users.user_id`;
 
-   WalkRating
+    database.query(sql,)
 })
 
 module.exports = router;
