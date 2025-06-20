@@ -112,7 +112,10 @@
           }
           catch (err) {
             if (err.reponse && err.reponse.data && err.reponse.data.error){
-              error.value = err.reponse.data.error
+              error.value = err.reponse.data.error;
+            }
+            else {
+              error.value = 'login failed'
             }
           }
 
