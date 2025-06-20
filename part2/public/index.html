@@ -65,10 +65,10 @@
           }
           catch (err) {
             if (err.response && err.response.data && err.response.data.err){
-              this error = err.response.data.error;
+              this.error = err.response.data.error;
             }
             else {
-              this.error
+              this.error = 'login failed'
             }
           }
         }
