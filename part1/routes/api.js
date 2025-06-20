@@ -59,7 +59,7 @@ router.get(' /walkers/summary',(req,res) => {
     database.query(sql, (err, results) => {
         if (err) {
             console.error('Error get /api/walkers/summary:', err);
-            
+            return res.status(500).json({error})
         }
     })
 })
