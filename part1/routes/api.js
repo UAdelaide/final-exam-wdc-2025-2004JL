@@ -39,8 +39,8 @@ router.get('/walkrequests/open',(req,res) => {
             console.error('Error get  /api/walkrequests/open:', err);
             return res.status(500).json({error: 'failed to get walkrequests'});
         }
-        res.
-    })
-})
+        res.json(results);
+    });
+});
 
 module.exports = router;
