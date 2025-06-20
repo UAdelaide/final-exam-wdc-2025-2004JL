@@ -58,6 +58,6 @@ router.post('/login', async (req, res) => {
       role: rows[0].role
     };
 
-    if (rows[0].role === 'owner' || rows[0])
+    if (rows[0].role === 'owner' || rows[0].role === 'walker')
 
 module.exports = router;
