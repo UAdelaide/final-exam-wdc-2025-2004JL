@@ -65,7 +65,7 @@ router.post('/login', async (req, res) => {
       return res.redirect('/walker/dashboard');
     }
     else {
-      return res.status(400).json({error})
+      return res.status(400).json({error: 'unknown role'});
     }
 
     res.json({ message: 'Login successful', user: rows[0] });
