@@ -32,7 +32,8 @@ async function inputTestData() {
             ('sun567', 'sun@example.com', 'hashedxyz', 'owner');
             `);
 
-        
+        await database.execute(`
+            `)
     }
 
 }
