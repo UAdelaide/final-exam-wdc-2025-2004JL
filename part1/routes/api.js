@@ -3,7 +3,7 @@ const router = express.Router();
 const database = require('../db');
 
 // /api/dogs
-router.get('/dogs',(req, res) => {
+router.get('/dogs', async (req, res) => {
     try{
         const [rows] = await database.execute(`
     SELECT Dogs.name AS dog_name,
