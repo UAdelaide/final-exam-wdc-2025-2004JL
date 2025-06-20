@@ -28,7 +28,8 @@ router.get('/walkrequests/open',(req,res) => {
     WalkRequests.requested_time,
     WalkRequests.duration_minutes,
     WalkRequests.location,
-    `
+    User.username AS owner_username
+    FROM`
 })
 
 module.exports = router;
