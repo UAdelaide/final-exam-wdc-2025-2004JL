@@ -22,6 +22,6 @@ var apiRouter = require('./routes/api');
 
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
-
+app.use('/api', apiRouter);
 // Export the app instead of listening here
 module.exports = app;
