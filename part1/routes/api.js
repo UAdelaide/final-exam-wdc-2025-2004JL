@@ -13,7 +13,7 @@ router.get('/dog',(req, res) => {
     database.query(sql,(err, results) => {
         if (err) {
             console.error('error:', err);
-            return res.status(500).json({})
+            return res.status(500).json({error:'failed to get dogs'});
         }
     })
 })
