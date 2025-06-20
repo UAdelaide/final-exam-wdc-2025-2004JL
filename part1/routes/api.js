@@ -55,7 +55,10 @@ router.get('/walkers/summary', async(req,res) => {
     WHERE Users.role = 'walker'
     GROUP BY Users.user_id`);
     res.json(rows);
-}
+    }
+    catch (err){
+        
+    }
     database.query(sql, (err, results) => {
         if (err) {
             console.error('Error get /api/walkers/summary:', err);
