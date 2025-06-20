@@ -40,14 +40,15 @@
         return {
           // message: 'Welcome to the Dog Walking Service!'
           Username: '',
-          Password: ''
+          Password: '',
+          error:''
         };
       },
       method:{
         async login(){
           try {
             const response = await axios.post('/users/login'),{
-              
+
             }
           }
         }
