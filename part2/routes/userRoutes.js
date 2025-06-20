@@ -58,19 +58,6 @@ router.post('/login', async (req, res) => {
       role: rows[0].role
     };
 
-    // return by the role
-    if (rows[0].role === 'owner'){
-      return res.redirect('/owner/dashboard');
-    }
-    else if (row[0].role === 'walker'){
-      return res.redirect('/walker/dashboard');
-    }
-    else {
-      return res.status(400).json({error: 'unknown role'});
-    }
-  } catch (error) {
-    res.status(500).json({ error: 'Login failed' });
-  }
-});
+    
 
 module.exports = router;
