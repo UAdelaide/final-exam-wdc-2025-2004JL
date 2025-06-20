@@ -38,7 +38,10 @@ async function inputTestData() {
             ('Bella', 'small', (SELECT user_id FROM Users WHERE username = 'carol123')),
             ('Jim', 'large', (SELECT user_id FROM Users WHERE username = 'alice123')),
             ('Mike', 'small', (SELECT user_id FROM Users WHERE username = 'sun567')),
-            ('Lucky', 'medium', (SELECT user_id FROM Users WHERE username = 'sun567'));`)
+            ('Lucky', 'medium', (SELECT user_id FROM Users WHERE username = 'sun567'));
+            `);
+
+        
     }
 
 }
