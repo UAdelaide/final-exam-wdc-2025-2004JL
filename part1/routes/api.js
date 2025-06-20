@@ -43,7 +43,9 @@ router.get('/walkrequests/open',async(req,res) => {
 
 //  /api/walkers/summary
 router.get('/walkers/summary', async(req,res) => {
-    
+    try{
+        
+    }
     const sql =`
     SELECT Users.username AS walker_username,
     COUNT(WalkRatings.rating_id) AS total_rating,
