@@ -97,5 +97,4 @@ router.get('/mydogs', async(req,res) => {
 });
 
 // question 17
-router.get('')
 module.exports = router;
