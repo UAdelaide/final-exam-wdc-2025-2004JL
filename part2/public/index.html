@@ -126,7 +126,14 @@
 
         onMounted(()=> {
           loadDogs();
-        })
+        });
+
+        return {
+          dogs,
+          message,
+          username
+          
+        }
       }
     }).mount('#app');
   </script>
