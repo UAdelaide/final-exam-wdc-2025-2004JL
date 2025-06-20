@@ -35,7 +35,7 @@ router.get('/walkrequests/open',async(req,res) => {
             WHERE WalkRequests.status = 'open'`)
     }
     catch (err) {
-        console.error('error:', err);
+        console.error('Error get  /api/walkrequests/open:', err);
         res.status(500).json({error:'failed to get dogs'});
     }
 
