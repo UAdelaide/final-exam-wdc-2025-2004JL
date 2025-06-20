@@ -83,6 +83,8 @@ router.post('/logout', (req,res) => {
 
 // question 15
 // student add mydog router
-router.get('/mydogs', async(req,res))
+router.get('/mydogs', async(req,res) => {
+  try (!)
+})
 
 module.exports = router;
