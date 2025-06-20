@@ -30,7 +30,9 @@ async function inputTestData() {
             ('carol123', 'carol@example.com', 'hashed789', 'owner'),
             ('ljl89', 'ljl@example.com', 'hashedabc', 'walker'),
             ('sun567', 'sun@example.com', 'hashedxyz', 'owner');
-            `)
+            `);
+
+        
     }
 
 }
