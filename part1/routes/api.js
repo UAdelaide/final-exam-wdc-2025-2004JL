@@ -15,5 +15,6 @@ router.get('/dog',(req, res) => {
             console.error('error:', err);
             return res.status(500).json({error:'failed to get dogs'});
         }
-    })
-})
+        res.json(results);
+    });
+});
