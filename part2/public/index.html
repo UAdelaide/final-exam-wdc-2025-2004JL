@@ -21,9 +21,11 @@
     <!-- stundent add/ input username and password -->
     <form @submit.prevent ='login'>
       <div id="ask">
-        <div id="username"></div>
-      <label for="username">Username</label><br>
+        <div id="username">
+         <label for="username">Username</label><br>
       <input id= "username" v-model="username" type="text" required><br>
+
+        </div>
 
       <label for="password">Password</label><br>
       <input id= "password" v-model="password" type="password" required><br>
