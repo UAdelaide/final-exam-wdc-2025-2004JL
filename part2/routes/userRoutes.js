@@ -52,8 +52,8 @@ router.post('/login', async (req, res) => {
 
     // stundent add
     // save user information into session
-    const user = row[0]
-    
+    const user = rows[0]
+
     req.session.user = {
       id: user.user_id,
       username: user.username,
