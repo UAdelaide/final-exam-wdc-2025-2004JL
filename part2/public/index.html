@@ -81,7 +81,7 @@
             const dogList = res.data;
 
             for (let dog of dogList){
-              const img_res
+              const img_res = await axios.get('https://dog.ceo/api/breeds/image/random')
             }
           }
         }
