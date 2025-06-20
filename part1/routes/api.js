@@ -56,7 +56,11 @@ router.get(' /walkers/summary',(req,res) => {
     WHERE Users.role = 'walker'
     GROUP BY Users.user_id`;
 
-    database.query(sql,)
+    database.query(sql, (err, results) => {
+        if (err) {
+            console
+        }
+    })
 })
 
 module.exports = router;
