@@ -92,7 +92,6 @@
             alert('Logout failed');
           }
 
-
           async function loadDogInfo() {
             try {
               const res =await fetch('/api/users/mydogs');
@@ -115,6 +114,7 @@
         const walks = ref([]);
         const message = ref('');
         const error = ref('');
+        const myDogs = ref([]);
 
         async function loadWalks() {
           try {
