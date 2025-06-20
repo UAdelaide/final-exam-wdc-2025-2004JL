@@ -12,7 +12,7 @@
   <!-- student add -->
   <div id="logout_div">
     <button @click="logout" class="logout_buttom">
-      Logout 
+      Logout
     </button>
   </div>
   <div id="app" class="container py-4">
@@ -76,6 +76,8 @@
 
     createApp({
       setup() {
+        // add log
+
         const form = ref({
           dog_id: '',
           requested_time: '',
