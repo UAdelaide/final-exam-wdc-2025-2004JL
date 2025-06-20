@@ -53,7 +53,8 @@ router.get(' /walkers/summary',(req,res) => {
     FROM Users
     LEFT JOIN WalkRating ON Users.user_id =WalkRating.walker_id
     LEFT JOIN WalkRequests ON WalkRatings.request_id = WalkRequests.request_id
-    WHERE`
+    WHERE Users.role = 'walker'
+    GROUP BY`
 })
 
 module.exports = router;
