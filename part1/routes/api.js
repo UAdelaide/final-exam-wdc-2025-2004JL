@@ -17,14 +17,6 @@ router.get('/dogs',(req, res) => {
         console.error('error:', err);
         res.status(500).json({error:'failed to get dogs'});
     }
-
-    database.query(sql,(err, results) => {
-        if (err) {
-            console.error('error:', err);
-            return res.status(500).json({error:'failed to get dogs'});
-        }
-        res.json(results);
-    });
 });
 
 //  /api/walkrequests/open
