@@ -49,7 +49,8 @@ router.get(' /walkers/summary',(req,res) => {
     SELECT Users.username AS walker_username,
     COUNT(WalkRating.rating_id) AS total_rating,
     AVG(WalkRating) AS average_rating,
-    COUNT (CASE WHEN WalkRequests.status = 'completed' THEN 1 END)`
+    COUNT (CASE WHEN WalkRequests.status = 'completed' THEN 1 END) AS
+    `
 })
 
 module.exports = router;
