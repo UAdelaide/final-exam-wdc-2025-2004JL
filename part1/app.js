@@ -23,7 +23,7 @@ const database =require('./db');
 
 async function inputTestData() {
     try {
-        
+        await database.execute
     }
 
 }
