@@ -22,9 +22,7 @@ router.get('/dogs', async (req, res) => {
 //  /api/walkrequests/open
 router.get('/walkrequests/open',async(req,res) => {
     try {
-        const [rows] = await database.execute
-    }
-    const sql = `
+        const [rows] = await database.execute(`
     SELECT WalkRequests.request_id,
     Dogs.name AS dog_name,
     WalkRequests.requested_time,
@@ -34,7 +32,8 @@ router.get('/walkrequests/open',async(req,res) => {
     FROM WalkRequests
     JOIN Dogs ON WalkRequests.dog_id = Dogs.dog_id
     JOIN Users ON Dogs.owner_id = Users.user_id
-    WHERE WalkRequests.status = 'open'`;
+    WHERE WalkRequests.status = 'open'`)
+    }
 
     database.query(sql,(err, results) => {
         if(err) {
