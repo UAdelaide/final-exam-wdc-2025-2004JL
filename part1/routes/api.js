@@ -8,7 +8,7 @@ router.get('/dogs',(req, res) => {
     Dogs.size,
     Users.username As owner_username
     FROM Dogs
-    JOIN Users u ON d.owner_id = u.user_id`;
+    JOIN Users ON Dogs.owner_id = u.user_id`;
 
     database.query(sql,(err, results) => {
         if (err) {
