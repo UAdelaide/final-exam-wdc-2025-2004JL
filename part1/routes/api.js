@@ -9,5 +9,6 @@ router.get('/dog',(req, res) => {
     Users.username As owner_username
     FROM Dogs
     JOIN Users u ON d.owner_id = u.user_id`;
-    
+
+    database.query()
 })
