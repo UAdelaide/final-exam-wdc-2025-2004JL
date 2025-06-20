@@ -81,7 +81,7 @@
       setup() {
         // add logout function
         // student add
-        async function logout() {
+        async function logout() { // add logout function
           try {
             await fetch('/api/users/logout',{method: 'POST'});
             window.location.href = '/'; // go back login
