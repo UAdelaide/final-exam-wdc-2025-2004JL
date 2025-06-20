@@ -4,6 +4,9 @@ const database = require('../db');
 
 // /api/dogs
 router.get('/dogs',(req, res) => {
+    try{
+        
+    }
     const sql = `
     SELECT Dogs.name AS dog_name,
     Dogs.size,
