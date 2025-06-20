@@ -58,7 +58,7 @@ router.get(' /walkers/summary',(req,res) => {
 
     database.query(sql, (err, results) => {
         if (err) {
-            console
+            console.error('Error get ')
         }
     })
 })
