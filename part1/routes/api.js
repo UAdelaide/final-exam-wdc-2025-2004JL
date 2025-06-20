@@ -36,16 +36,8 @@ router.get('/walkrequests/open',async(req,res) => {
     }
     catch (err) {
         console.error('Error get  /api/walkrequests/open:', err);
-        res.status(500).json({error:'failed to get dogs'});
+        return res.status(500).json({error: 'failed to get walkrequests'});
     }
-
-    database.query(sql,(err, results) => {
-        if(err) {
-            console.error('Error get  /api/walkrequests/open:', err);
-            return res.status(500).json({error: 'failed to get walkrequests'});
-        }
-        res.json(results);
-    });
 });
 
 //  /api/walkers/summary
