@@ -22,7 +22,8 @@ router.get('/dogs',(req, res) => {
 
 //  /api/walkrequests/
 router.get('/walkrequests/open',(req,res) => {
-    const sql = ``
+    const sql = `
+    SELECT `WalkRequests
 })
 
 module.exports = router;
