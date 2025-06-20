@@ -44,6 +44,9 @@ router.get('/walkrequests/open',(req,res) => {
 });
 
 //  /api/walkers/summary
-router.get(' /walkers/summary',(req,res) => )
+router.get(' /walkers/summary',(req,res) => {
+    const sql =`
+    SELECT Users.username AS`
+})
 
 module.exports = router;
