@@ -51,7 +51,7 @@ async function inputTestData() {
         );
 
         await database.execute(`
-            INSERT INTO WalkRating (reques_id, walker_id, owner_id, rating, comments)
+            INSERT INTO WalkRatings (reques_id, walker_id, owner_id, rating, comments)
             VALUES
             (
             (SELECT request_id FROM WalkRequests WHERE dog_id =(SELECT dog_id FROM Dogs WHERE name = 'Max')),
