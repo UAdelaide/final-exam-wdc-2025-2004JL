@@ -92,13 +92,13 @@
             alert('Logout failed');
           }
 
-          async function loadDogInfo() {
-            try {
-              const res =await fetch('/api/users/mydogs');
-              myDogs.value = await res.json();
-            }
-            catch (err){
-              console.error('failed to fetch dogs');
+        async function loadDogInfo() {
+          try {
+            const res =await fetch('/api/users/mydogs');
+            myDogs.value = await res.json();
+          }
+          catch (err){
+            console.error('failed to fetch dogs');
             }
 
           }
