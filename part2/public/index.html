@@ -50,7 +50,9 @@
             const response = await axios.post('/users/login',{
               username: this.username,
               password: this.password
-            })
+            });
+
+            const role = response.data.user.role;
           }
         }
       }
