@@ -60,7 +60,8 @@ router.post('/login', async (req, res) => {
 
     if (rows[0].role === 'owner' || rows[0].role === 'walker'){
       return res.json({
-        message: ''
+        message: 'login successful',
+        user: req.session.user
       })
     }
 
