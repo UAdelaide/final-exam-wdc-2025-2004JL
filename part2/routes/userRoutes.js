@@ -72,8 +72,13 @@ router.post('/login', async (req, res) => {
 // question 14
 // student add logout
 router.post('/logout', (req,res) => {
-  req.session.destroy((err) =>
-  )
+  req.session.destroy((err) => {
+    if (err) {
+    return res.status(500).json({error: 'logout failed'});
+    }
+    res.clearCookie('connect.sid');
+    res.json({message:'Logout sucessful'});
+  });
 
 });
 
